@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+  </head>
+  <body>
+    <header class="flex bg-black w-full">
+      <div class="logo flex items-center">
+        <img class="invert" src="Svg/logo.svg" alt="logo" />
+        <p class="logo-name">Musify</p>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search song by name..."
+          id="searchInput"
+        />
+        <span class="search-icon">🔍</span>
+      </div>
+    </header>
+
+    <main class="flex bg-black">
+      <section class="left bg-gray rounded custom-scroll" id="mainLeft">
+        <div class="flex items-center w-full m1" id="left-top">
+          <h3 class="ml">Your Library</h3>
+          <img
+            src="Svg/closeIcon.svg"
+            alt="close Icon"
+            class="invert music-options-width"
+            id="close-btn"
+          />
+        </div>
+
+        <button class="newPlaylist">Create New Playlist +</button>
+
+        <div class="create-playlist">
+          <h3>Create Your First Playlist</h3>
+          <p>It's easy we will help you</p>
+          <button class="rounded create-playlistBtn">Create Playlist</button>
+        </div>
+
+        <div class="playlists w-full h-full">
+          <!-- All Playlists created by user will be displayed here -->
+        </div>
+      </section>
+
+      <section class="right showAllSongs rounded">
+        <div class="flex items-center w-full gap">
+          <div class="hamIcon">
+            <img
+              src="Svg/hamburger.svg"
+              alt="menu Icon"
+              class="invert playlist-btn-width"
+              id="menu"
+            />
+          </div>
+          <h2 class="right-heading m1">All Songs</h2>
+          <button id="closePlaylist" class="m1 rounded" title="Close Playlist">
+            <img
+              src="Svg/closeIcon.svg"
+              alt="Close Icon"
+              class="invert playlist-btn-width"
+            />
+          </button>
+        </div>
+        <div class="music-container custom-scroll">
+          <!-- All Songs Cards will be displayed here -->
+        </div>
+      </section>
+
+      <div class="playMusic right">
+        <!-- Play Song Section will be displayed here  -->
+      </div>
+
+      <div class="createPlaylist w-full custom-scroll">
+        <img
+          src="Svg/backIcon.svg"
+          alt="back icon"
+          class="invert back-icon-width"
+          id="back-Home"
+        />
+        <div class="flex items-center w-full m1" id="playlist-nav">
+          <div class="flex items-center">
+            <div class="hamIcon">
+              <img
+                src="Svg/hamburger.svg"
+                alt="menu Icon"
+                class="invert playlist-btn-width"
+                id="menu"
+              />
+            </div>
+            <div>
+              <h3 class="ml">Create A new Playlist:</h3>
+              <p class="ml">Select songs and click on save playlist button</p>
+            </div>
+          </div>
+          <button id="savePlaylistBtn" class="rounded">Save Playlist</button>
+        </div>
+        <div class="allSongs w-full m1">
+          <!-- All songs to create playlist will be displayed here  -->
+        </div>
+      </div>
+
+      <div id="popup" class="modal">
+        <div class="modal-content">
+          <h2 class="playlistHeading">
+            Create New Playlist Please Enter Playlist name!
+          </h2>
+          <form class="playlistName">
+            <input
+              type="text"
+              id="playlistName"
+              placeholder="Enter playlist name"
+              name="playlist-Name"
+            />
+            <button id="saveBtn">Save Playlist</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

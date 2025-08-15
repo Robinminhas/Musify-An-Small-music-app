@@ -1,0 +1,197 @@
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.h-half {
+  height: 50%;
+}
+
+.border {
+  border: 2px solid red;
+  margin: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.bg-gray {
+  background-color: #1f1f1f;
+  color: #b3b3b3;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.m1 {
+  margin-top: 20px;
+}
+
+.m2 {
+  margin-top: 70px;
+}
+
+.ml {
+  margin-left: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gap {
+  gap: 30px;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.music-options-width {
+  width: 20px;
+}
+
+.back-icon-width {
+  width: 40px;
+}
+
+.playlist-btn-width {
+  width: 25px !important;
+}
+
+.close-btn-popup {
+  font-size: 30px;
+}
+
+.close-btn-popup:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  main .left {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  main .left {
+    display: none;
+  }
+
+  main .right {
+    width: 100%;
+  }
+
+  .hamIcon {
+    transform: scale(1);
+  }
+
+  .createPlaylist {
+    font-size: 12px;
+  }
+
+  #playlist-nav {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header .logo {
+    padding: 0;
+    justify-content: start;
+  }
+
+  .music-card {
+    width: 50%;
+  }
+
+  .playMusic .songImg {
+    height: 200px;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .playMusic .songImg img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .playBar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .playMusic .playBar h5 {
+    display: none;
+  }
+
+  .options {
+    display: flex;
+    gap: 20px;
+  }
+
+  .bar {
+    margin-top: 20px;
+  }
+}
+
+
+.custom-scroll::-webkit-scrollbar {
+  width: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #e0e0e0; /* light gray track */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #4b4b4b; /* light gray thumb */
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #393939;
+}
+
+/* Firefox */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #484848 #232323;
+}
+
+.open {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
